@@ -3,7 +3,7 @@ import pandas as pd
 
 # CSVファイルを読み込む
 data = pd.read_csv("combined_output.csv")
-search_index = pd.read_csv("search_index.csv", header=None, names=["検査項目"])
+search_index = pd.read_csv("search_index.csv", header=None, names=["検査項目"], encoding='shift_jis')
 
 # 検索機能
 def to_half_width(text):
